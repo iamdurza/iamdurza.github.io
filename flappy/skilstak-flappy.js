@@ -70,11 +70,11 @@ var CONFIG = {
     } 
   },
   "gameover": {
-    "text": "Game\nOver",
+    "text": "Game\nOver\nSKRUB",
     "offset": -150,
     "style": {
       "font": "100px sans-serif", 
-      "fill": "#b58900",
+      "fill": "#7FFF00",
       "align": "center"
     }, 
     "score": {
