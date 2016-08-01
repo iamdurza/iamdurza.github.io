@@ -4,5 +4,5 @@ import colors as c
 
 
 
-print(c.multi("MULTI") + ("Hello World!"))
+print(c.multi("MULTI") + "Hello World!")
         
