@@ -4,5 +4,5 @@ import colors as c
 
 
 while True: 
-    print(c.multi( "Hello World!", end=" "))
+    print(c.multi( "Hello World!"), end=" ")
         
