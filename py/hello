@@ -3,6 +3,6 @@
 import colors as c
 
 
-while True 
+while True; 
     print(c.multi( "Hello World!"))
         
