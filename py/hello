@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-import colors
+import colors as c
+
+
 
 print(c.multi(MULTI) + "Hello World!")
         
