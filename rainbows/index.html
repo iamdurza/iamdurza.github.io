@@ -16,4 +16,19 @@ title{
 </style>
 
 <script>
+  var canvas = document.querySelector("canvas");
+canvas.width = 500;
+canvas.height = 120;
+var ctx = canvas.getContext("2d");
+ctx.font = "bold 30px Verdana";
+
+function drawRainbow (text,x,y) {
+  var colors = ["red","orange","yellow","green","blue","indigo","violet","magenta","black","lime","teal","goldenrod","coral"];
+  for (var i = 0; i < colors.length; i++) {
+    ctx.fillStyle = colors[i];
+    ctx.fillText(text, x+ i * 3, y + i * 3)
+  }
+}     
+                 
+drawRainbow("Rainbows",10,70);
 </script>
