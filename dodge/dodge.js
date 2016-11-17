@@ -7,7 +7,7 @@ var C = {
     "width": 320,
     "height": 568,
     "xspeed": 0,
-    "yspeed": 700,
+    "yspeed": 9999,
     "file": "assets/background.png"
   }
 }
