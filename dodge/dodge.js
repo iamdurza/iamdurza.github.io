@@ -38,7 +38,7 @@ class Load {
 class Play {
   create() {
     console.log("Entered Play ");
-    this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.hieght,"bg");
+    this.bg = this.add.tileSprite(0,0,C.bg.width,C.bg.height,"bg");
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
   }
 }
