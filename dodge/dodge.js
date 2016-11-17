@@ -24,7 +24,7 @@ class Load {
 class Play {
   create() {
     console.log("Entered Play ");
-    this.background = this.add.titleSprite(0,0,320,568,"bg");
+    this.background = this.add.tileSprite(0,0,320,568,"bg");
     this.background.autoScroll(0,9999999999999999999999);
   }
 }
