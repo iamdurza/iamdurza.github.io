@@ -15,8 +15,11 @@ class Load {
   }
     create() {
       console.log("Loading...");
+      this.load.image("bg","assets/background.png")
     }
   }
+
+
 
 var game = new Phaser.Game(320,568);
 game.state.add("Boot",Boot);
