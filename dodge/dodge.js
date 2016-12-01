@@ -7,8 +7,15 @@ var C = {
     "width": 320,
     "height": 568,
     "xspeed": 0,
-    "yspeed": 9999,
+    "yspeed": 700,
     "file": "assets/background.png"
+  },
+  "p": {
+    "file": "assets/player.png",
+    "width": 46,
+    "height": 64,
+    "frames": 2
+    
   }
 }
 
@@ -27,6 +34,7 @@ class Load {
   preload() {
     console.log("Loading");
     this.load.image("bg",C.bg.file)
+    this.load.spritesheet("player",C.p.file,width,C.p.frames)
   }
   
   create() {
@@ -47,7 +55,7 @@ function restart() {
   game.state.start("Boot")
 }
 
-var game = new Phaser.Game(320,568);
+var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play",Play);
