@@ -43,6 +43,10 @@ class Play {
   }
 }
 
+function restart() {
+  game.state.start("Boot")
+}
+
 var game = new Phaser.Game(320,568);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
