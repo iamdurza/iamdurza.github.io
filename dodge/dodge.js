@@ -23,7 +23,7 @@ var C = {
       "file": "assets/dodge.png",
       "width": 64,
       "height": 64,
-      "frames": 2,
+      "frames": 13,
       "fps": 2,
       "startx": 160,
       "starty": 32,
