@@ -24,7 +24,7 @@ var C = {
       "width": 64,
       "height": 64,
       "frames": 13,
-      "fps": 2,
+      "fps": 5,
       "startx": 160,
       "starty": 32,
   }
