@@ -21,12 +21,12 @@ var C = {
   },
   "d": {
       "file": "assets/dodge.png",
-      "width" 64,
-      "width", 64,
-      "frames", 2,
-      "fps" 2,
-      "startx", 160,
-      "starty", 32,
+      "width": 64,
+      "height": 64,
+      "frames": 2,
+      "fps": 2,
+      "startx": 160,
+      "starty": 32,
   }
 }
 
