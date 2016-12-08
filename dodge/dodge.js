@@ -45,8 +45,8 @@ class Load {
   preload() {
     console.log("Loading");
     this.load.image("bg",C.bg.file)
-    this.load.spritesheet("player",C.p.file.width,C.p.frames)
-    this.load.spritesheet("dodge",C.d.width,C.d.height,C.d.frames);
+    this.load.spritesheet("player",C.p.file,C.p.width,C.p.frames,C.p.frames);
+    this.load.spritesheet("dodge",C.d.file,C.d.width,C.d.height,C.d.frames);
   }
   
   create() {
