@@ -20,7 +20,7 @@ var C = {
     
   },
   "d": {
-      "file": "assets/dodge.png",
+      "file": "assets/dodger.png",
       "width": 64,
       "height": 64,
       "frames": 13,
