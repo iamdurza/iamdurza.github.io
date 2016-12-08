@@ -16,8 +16,9 @@ var C = {
     "height": 64,
     "frames": 2 ,
     "startx": 160,
-    "starty": 500
-    
+    "starty": 500,
+    "speed": 5
+
   },
   "d": {
       "file": "assets/dodger.png",
@@ -76,9 +77,16 @@ class Play {
     this.dodge.scale.set(1);
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
+  
+    this.cursors = this.input.keyboard.createCursorKeys();
   }
   update() {
-    console.log("Play.update() called.");
+    if (this.cursors.left.isDown) {
+      this.player.x -= C.p.speed;
+    }
+    if (this.cursors.right.isDown) {
+      this.player.x += C.p.speed;
+    }
   }
 }
 
