@@ -88,11 +88,12 @@ class Play {
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
     }
+    this.dodge.y += C.d.speed;
   }
   render() {
     game.debug.text("x: " + this.dodge.x + ", y: " + this.dodge.y, 4, 16);
   }
-  this.dodge.y += C.d.speed;
+  
 }
 
 function restart() {
