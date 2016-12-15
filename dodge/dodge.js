@@ -28,7 +28,7 @@ var C = {
       "fps": 10,
       "startx": 160,
       "starty": 25,
-      "speed": 20 
+      "speed": 10 
   }
 }
 
