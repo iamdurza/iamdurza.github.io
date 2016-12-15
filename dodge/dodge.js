@@ -90,6 +90,7 @@ class Play {
     }
     if (this.dodge.y > this.game.height) {
       this.dodge.y = C.d.starty
+      this.dodge.x = randInt(C.game.width);
     }
     
       this.dodge.y += C.d.speed;
