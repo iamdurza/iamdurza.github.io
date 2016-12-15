@@ -116,7 +116,7 @@ function restart() {
 function checkOverlap(spriteA, spriteB) {
   
   var boundsA = spriteA.getBounds();
-  var boundsB = spriteB.getbounds();
+  var boundsB = spriteB.getBounds();
 
   return Phaser.Rectangle.intersects(boundsA, boundsB);
 
