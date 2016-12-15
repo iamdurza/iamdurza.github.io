@@ -88,7 +88,11 @@ class Play {
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
     }
-    this.dodge.y += C.d.speed;
+    if (this.dodge.y > this.game.height) {
+      this.dodge.y = C.d.starty
+    }
+    
+      this.dodge.y += C.d.speed;
   }
   render() {
     game.debug.text("x: " + this.dodge.x + ", y: " + this.dodge.y, 4, 16);
@@ -100,18 +104,11 @@ function restart() {
   game.state.start("Boot")
 }
 
+
+
 var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",Boot);
 game.state.add("Load",Load);
 game.state.add("Play",Play);
 game.state.start("Boot");
-
-
-
-
-
-
-
-
-
 
