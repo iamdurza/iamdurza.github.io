@@ -28,6 +28,7 @@ var C = {
       "fps": 10,
       "startx": 160,
       "starty": 32,
+      "speed": 20 
   }
 }
 
@@ -91,6 +92,7 @@ class Play {
   render() {
     game.debug.text("x: " + this.dodge.x + ", y: " + this.dodge.y, 4, 16);
   }
+  this.dodge.y += C.d.speed;
 }
 
 function restart() {
