@@ -90,9 +90,13 @@ class Play {
     }
     if (this.dodge.y > this.game.height) {
       this.dodge.y = C.d.starty
-      this.dodge.x = randInt(C.game.width);
+      let px = (C.d.width * this.dodge.scale.x) / 2;
+      let max = C.game.width - px
+      let min = 0 + px
+      let newx = randInt(max);
+      if (newx < min){ newx = min }
+      this.dodge.x = newx
     }
-    
       this.dodge.y += C.d.speed;
   }
   render() {
