@@ -79,6 +79,8 @@ class Play {
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
   
+    this.points = 0
+
     this.cursors = this.input.keyboard.createCursorKeys();
   }
   update() {
@@ -95,9 +97,14 @@ class Play {
       this.dodge.x = randInt(px,max);
     }
       this.dodge.y += C.d.speed;
+      
+    if (checkOverlap(this.dodge, this.player)) {
+        this.points += 1;
+    }
+
   }
   render() {
-    game.debug.text("x: " + this.dodge.x + ", y: " + this.dodge.y, 4, 16);
+    game.debug.text("points: " + this.points, 4, 16);
   }
   
 }
@@ -106,8 +113,16 @@ function restart() {
   game.state.start("Boot")
 }
 
+function checkOverlap(spriteA, spriteB) {
+  
+  var boundsA = spriteA.getBounds();
+  var boundsB = spriteB.getbounds();
 
-function randInt(max) {
+  return Phaser.Rectangle.intersects(boundsA, boundsB);
+
+}
+
+function randInt(min,max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
