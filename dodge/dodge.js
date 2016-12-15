@@ -100,6 +100,10 @@ class Play {
       
     if (checkOverlap(this.dodge, this.player)) {
         this.points += 1;
+        this.dodge.y = C.d.starty
+        let px = (C.d.width * this.dodge.scale.x) / 2;
+        let max = C.game.width - px
+        this.dodge.x = randInt(px,max);
     }
 
   }
