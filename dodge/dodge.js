@@ -1,3 +1,4 @@
+//update mobile left move in update func.
 var C = {
   "game": {
     "width": 320,
@@ -48,7 +49,7 @@ class Load {
     console.log("Loading");
     this.load.image("bg",C.bg.file)
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
-    this.load.spritesheet("dodge",C.d.file,C.d.width,C.d.height,C.d.frames);
+    this.load.spritesheet("dodge",C.d.file,C.d.width,C.d.height,C.d.frames); 
   }
   
   create() {
@@ -83,7 +84,12 @@ class Play {
 
     this.cursors = this.input.keyboard.createCursorKeys();
   }
-  update() {
+  update() {       
+    if (this.device.desktop == false && this.input.mousePointer.isDown) {
+      if (this.input.mousePointer.x > this.game.width / 2) {
+        this.player.x += C.p.speed;  
+      }
+    }
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
     }
