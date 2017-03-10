@@ -105,7 +105,12 @@ class Play {
         let max = C.game.width - px
         this.dodge.x = randInt(px,max);
     }
-
+    if (this.player.x > C.game.width) {
+      this.player.x = C.game.width 
+    }
+    else if (this.player.x < 0) {
+      this.player.x = 0  
+    }
   }
   render() {
     game.debug.text("points: " + this.points, 4, 16);
