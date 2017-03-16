@@ -85,7 +85,7 @@ class Play {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
   update() {       
-    if (this.device.desktop == false && this.input.mousePointer.isDown) {
+    if (game.device.desktop == false && this.input.mousePointer.isDown) {
       if (this.input.mousePointer.x > this.game.width / 2) {
         this.player.x += C.p.speed;  
       }
