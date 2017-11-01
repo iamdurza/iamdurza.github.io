@@ -89,7 +89,7 @@ class Play {
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
     
-    this.dodge2 = this.add.sprite(C.d.startx,C.d.starty,"dodge2");
+    this.dodge2 = this.add.sprite(C.d2.startx,C.d2.starty,"dodge2");
     this.dodge2.anchor.set(0.5,0.5);
     this.dodge2.smoothed = false;
     this.dodge2.scale.set(1);
