@@ -34,7 +34,7 @@ var C = {
   "d2": {
       "file": "assets/atom_bomb.png",
       "width": 50,
-      "height": 50:
+      "height": 50,
       "startx": 160,
       "starty": 25,
       "speed": 25
