@@ -30,6 +30,14 @@ var C = {
       "startx": 160,
       "starty": 25,
       "speed": 10 
+  },
+  "d2": {
+      "file": "assets/atom_bomb.png",
+      "width": 50,
+      "height": 50:
+      "startx": 160,
+      "starty": 25,
+      "speed": 25
   }
 }
 
@@ -50,6 +58,7 @@ class Load {
     this.load.image("bg",C.bg.file)
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.spritesheet("dodge",C.d.file,C.d.width,C.d.height,C.d.frames); 
+    this.load.spritesheet("dodge2",C.d.file,C.d.width,C.d.height,);
   }
   
   create() {
@@ -79,6 +88,11 @@ class Play {
     this.dodge.scale.set(1);
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
+    
+    this.dodge2 = this.add.sprite(C.d.startx,C.d.starty,"dodge2");
+    this.dodge2.anchor.set(0.5,0.5);
+    this.dodge2.smoothed = false;
+    this.dodge2.scale.set(1);
   
     this.points = 0
 
