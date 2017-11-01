@@ -92,7 +92,7 @@ class Play {
     this.dodge2 = this.add.sprite(C.d2.startx,C.d2.starty,"dodge2");
     this.dodge2.anchor.set(0.5,0.5);
     this.dodge2.smoothed = false;
-    this.dodge2.scale.set(2);
+    this.dodge2.scale.set(1.5);
   
     this.points = 0
 
