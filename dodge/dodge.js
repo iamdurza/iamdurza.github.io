@@ -58,7 +58,7 @@ class Load {
     this.load.image("bg",C.bg.file)
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.spritesheet("dodge",C.d.file,C.d.width,C.d.height,C.d.frames); 
-    this.load.spritesheet("dodge2",C.d.file,C.d.width,C.d.height,);
+    this.load.spritesheet("dodge2",C.d2.file,C.d2.width,C.d2.height,);
   }
   
   create() {
