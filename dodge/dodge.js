@@ -116,7 +116,16 @@ class Play {
       let max = C.game.width - px
       this.dodge.x = randInt(px,max);
     }
+    
+    if (this.dodge2.y > this.game.height) {
+      this.dodge2.y = C.d.starty
+      let px = (C.d.width * this.dodge2.scale.x) / 2;
+      let max = C.game.width - px
+      this.dodge2.x = randInt(px,max);
+    }
+    
       this.dodge.y += C.d.speed;
+      this.dodge2.y += C.d.speed;
       
     if (checkOverlap(this.dodge, this.player)) {
         this.points += 1;
@@ -125,6 +134,11 @@ class Play {
         let max = C.game.width - px
         this.dodge.x = randInt(px,max);
     }
+    
+    if (checkOverlap(this.dodge2, this.player)) {
+        restart()  
+    }
+    
     if (this.player.x > C.game.width) {
       this.player.x = C.game.width 
     }
