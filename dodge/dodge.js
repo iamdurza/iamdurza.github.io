@@ -125,7 +125,7 @@ class Play {
     }
     
       this.dodge.y += C.d.speed;
-      this.dodge2.y += C.d.speed;
+      this.dodge2.y += C.d2.speed;
       
     if (checkOverlap(this.dodge, this.player)) {
         this.points += 1;
